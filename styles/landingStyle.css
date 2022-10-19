@@ -1,27 +1,29 @@
-*/ {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body, html {
-  background-color: #eeeff1;
-  margin:0 auto;
-  min-width: 100%;
-  min-height: 100%;
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
-p {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
+p.reg-text {
+  max-width: 540px;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.64;
 
   color: #727272;
 }
-.top {
-  box-sizing: content-box;
-  height: 40vw;
+.container {
+  max-width: 1170px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+header {
+  padding-top: 80px;
+  background-color: #eeeff1;
 }
 ul {
   list-style: none;
@@ -30,17 +32,14 @@ ul {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0;
   gap: 40px;
-  position: relative;
   height: 27px;
-  left: 20%;
-  margin-top: 80px;
-  margin-bottom: 151px;
 }
 .nav a {
   transition: 0.4s ease-in-out;
   letter-spacing: 0.1em;
+  margin-right: 42px;
+  text-decoration: none;
 }
 .nav > li > a {
   color: black;
@@ -53,86 +52,53 @@ ul {
 .nav li a:hover {
   color: #34547a;
 }
-h1 {
-  padding: 0;
-  position: relative;
-  margin-top: 151px;
-  left: 20%;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
+#intro {
+  background-color: #eeeff1;
+  padding: 150px 0 80px;
+}
+.intro-info h1 {
   font-size: 48px;
-  margin-bottom: 5%;
-  height: 45px;
-}
-h2 {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
-  font-size: 32px;
-
-  color: #000000;
+  padding-bottom: 60px;
 }
-.firstPar {
-  position: relative;
-  left: 20%;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding: 0;
-  width: 540px;
-  height: 70px;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
+.intro-info button {
   font-size: 16px;
-  line-height: 26px;
-  color: #727272;
-}
-.firstButton {
-  position: relative;
-  display: flex;
-  width: 225px;
-  height: 65px;
-  left: 20%;
-  margin-top: 5%;
-  justify-content: center;
-
   background-color: #34547a;
-}
-#button {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
   color: #ffffff;
+  border: none;
+  padding: 24px 73px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
-.middle {
-  box-sizing: content-box;
-  position: relative;
-  height: 19vw;
-  background-color: #ffffff;
+#aboutMe {
+  padding: 112px 0 100px;
+}
+.descCont {
   text-align: center;
 }
-.middle h2 {
-  display: inline-block;
-  margin-top: 112px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 30px;
-  width: 6em;
+.descCont h2 {
+  font-size: 32px;
+  font-weight: 500;
+  padding-bottom: 50px;
 }
-.middle p {
-  display: block;
+.descCont p {
   margin: 0 auto;
+  max-width: 30vw;
+}
+.descCont2 {
   text-align: center;
-  width: 540px;
-  height: 70px;
+}
+.descCont2 h2 {
+  font-size: 32px;
+  font-weight: 500;
+  padding-bottom: 50px;
+}
+.descCont2 p {
+  margin: 0 auto;
+  margin-bottom: 5vw;
+  max-width: 30vw;
 }
 #int {
-  position: relative;
   height: 15vw;
   background-color: #34547a;
 
@@ -147,58 +113,22 @@ h2 {
   flex: 1 1 auto;
   padding: 0 30px;
 }
-.last {
-  height: 60vw;
-  background-color: #eeeff1;
-  text-align: center;
+#howWork {
+  padding: 100px 0;
 }
-.last h2 {
-  display: inline-block;
-  margin-top: 112px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-  width: 10em;
-  height: 30px;
-}
-.last p {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  width: 540px;
-  margin-bottom: 50px;
+
+.how-work-cont {
+  display: block;
 }
 footer {
-  height: 8vw;
   background-color: #34547a;
+  padding: 50px 0;
+  color: #ffffff;
 }
-h3 {
-  display: inline-block;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+footer h3 {
   font-size: 21px;
-  line-height: 24.61px;
-  width: 10em;
-  height: 20px;
-
-  color: #ffffff;
-
-  margin-left: 20%;
-  margin-top: 50px;
-  margin-bottom: 10px;
+  padding-bottom: 20px;
 }
-.copyrights {
-  display: block;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
+footer a {
   font-size: 13px;
-
-  width: 15em;
-  height: 30px;
-
-  color: #ffffff;
-
-  margin-top: 20px;
-  margin-left: 20%;
 }
